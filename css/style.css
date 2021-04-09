@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/02/2020, 9:33:27 PM
+    Author     : milind
+*/
+
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.flex-top-center {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    /*text-align: center;*/
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.links > a.active {
+    border:1px dashed #636b6f;
+    padding: 12px 25px;
+    border-radius: 20px;
+    color:red;
+    font-weight: bold;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.content .title {
+    text-align: center;
+}
+
+.signup-form .signup-button,
+.login-form .login-button,
+.create-post-form .create-post-button,
+.update-post-form .update-post-button{
+    width:100%;
+}
+
+.post-div .card{
+    margin-bottom: 15px;
+}
