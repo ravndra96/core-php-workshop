@@ -7,6 +7,8 @@ $dbUserName = "efantom";
 $dbPassword = "test@123";
 
 $pdoConnection = new PDO($dsn, $dbUserName, $dbPassword);
+// set the PDO error mode to exception
+$pdoConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $createDatabase = "CREATE DATABASE `core_php_workshop`";
 $pdoConnection->exec($createDatabase);
