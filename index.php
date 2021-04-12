@@ -9,8 +9,8 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <div class="content">
-
+        <div class="container">
+            <h1>Welcome to My Network</h1>
         </div>
         <!-- bootstrap5 js -->
         <script src="js/bootstrap.min.js"></script>

@@ -21,8 +21,10 @@ if (isset($_REQUEST['id']) && $_REQUEST['id'] != '') {
 
     $_SESSION['success'] = 'Your post has been updated successfully';
 } else {
+//    $createPostQuery = "INSERT into `posts` (user_id, title, handle, content) VALUES (?,?,?,?)";
     $createPostQuery = "INSERT into `posts` (user_id, title, handle, content) VALUES ('$authUserId', '$title', '$handle', '$content')";
     $pdoConnection->exec($createPostQuery);
+//    $pdoConnection->prepare($createPostQuery)->execute([$authUserId, $title, $handle, $content]);
     $_SESSION['success'] = 'Your post has been published successfully';
 }
 header("Location: my_posts.php");

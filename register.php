@@ -23,7 +23,7 @@ if (isset($_REQUEST['name']) && isset($_REQUEST['email']) && isset($_REQUEST['pa
         header("Location: register_view.php");
     } else {
         // set the PDO error mode to exception
-        // $pdoConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $pdoConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $query = "INSERT into `users` (name, email, password) VALUES ('$name', '$email', '" . md5($password) . "')";
         $pdoConnection->exec($query);
 
